@@ -8,7 +8,13 @@
     #43304C (purple)
     #E2E6E4 (lightgray)
 */
-
+/*Font Sizes:
+    20 px (company name), 
+    18px (slogan),
+    24px (img caption)
+    18 px (article titles)
+    13px (article text)
+*/
 header {
     background-color: #E2E6E4;
     color: #2B461D;
@@ -26,20 +32,24 @@ header {
 }
 .pageTitle {
     text-decoration: underline;
+    color: #3B5A9D;
 }
 .imageCaption {
     text-decoration: underline;
     font-size: 24px;
     font-weight: bolder
 }
+/*Why aren't these 3 working??*/
 .siteSectionTitle {
-    
+    color: #3B5A9D;
 }
 .siteArticleTitle {
-
+    color: #63812C;
+    font-size: 18px
 }
 .siteArticle {
-
+    color: purple;
+    font-size: 13px
 }
 
 .finePrint {
