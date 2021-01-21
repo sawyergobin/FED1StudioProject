@@ -21,6 +21,15 @@ header {
     border: solid;
     border-color: #2B461D;
 }
+body {
+    background-color: #E2E6E4;
+}
+.navBar {
+    background-color: #E2E6E4;
+    color: #2B461D;
+    border: solid;
+    border-color: #2B461D;
+}
 #companyName {
     color: #63812C;
     font-weight: bold;
@@ -37,7 +46,13 @@ header {
 .imageCaption {
     text-decoration: underline;
     font-size: 24px;
-    font-weight: bolder
+    font-weight: bolder;
+    color: #3B5A9D;
+}
+.imageCaption2 {
+    font-size: 24px;
+    font-weight: bolder;
+    color: #3B5A9D;
 }
 /*Why aren't these 3 working??*/
 .siteSectionTitle {
@@ -45,16 +60,21 @@ header {
 }
 .siteArticleTitle {
     color: #63812C;
-    font-size: 18px
+    font-size: 18px;
+    background-color: #E8D3A3;
 }
 .siteArticle {
-    color: purple;
-    font-size: 13px
+    color: #2B461D;
+    font-size: 15px;
+    background-color: #E8D3A3;
 }
 
 .finePrint {
-    font-size: 8px
+    font-size: 8px;
 }
 footer {
+    background-color: #E2E6E4;
+    color: #2B461D;
     border: solid;
+    border-color: #2B461D;
 }
