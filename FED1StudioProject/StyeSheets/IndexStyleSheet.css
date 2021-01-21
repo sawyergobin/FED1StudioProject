@@ -1,0 +1,50 @@
+﻿/*Primary color use list: 
+    #3B5A9D (blue)
+    #FFA633 (orange)
+    #E8D3A3 (khaki)
+    #4FB2AA (teal)
+    #63812C (green)
+    #2B461D (dark green)
+    #43304C (purple)
+    #E2E6E4 (lightgray)
+*/
+
+header {
+    background-color: #E2E6E4;
+    color: #2B461D;
+    border: solid;
+    border-color: #2B461D;
+}
+#companyName {
+    color: #63812C;
+    font-weight: bold;
+    font-size: 20px;
+}
+.slogan {
+    font-style: italic;
+    font-size: 18px;
+}
+.pageTitle {
+    text-decoration: underline;
+}
+.imageCaption {
+    text-decoration: underline;
+    font-size: 24px;
+    font-weight: bolder
+}
+.siteSectionTitle {
+    
+}
+.siteArticleTitle {
+
+}
+.siteArticle {
+
+}
+
+.finePrint {
+    font-size: 8px
+}
+footer {
+    border: solid;
+}

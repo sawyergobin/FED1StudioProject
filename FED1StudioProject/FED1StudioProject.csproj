@@ -69,6 +69,9 @@
   <ItemGroup>
     <Content Include="Classes.html" />
     <Content Include="Contact.html" />
+    <Content Include="Images\7e20d845add915e6ec1e953f4cfacc9a.jpg" />
+    <Content Include="Images\935c966f79f7ef240c90290c3f158972.jpg" />
+    <Content Include="StyeSheets\IndexStyleSheet.css" />
     <Content Include="Team.html" />
     <Content Include="index.html" />
     <Content Include="Web.config" />
@@ -88,7 +91,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Scripts\" />
-    <Folder Include="StyeSheets\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
