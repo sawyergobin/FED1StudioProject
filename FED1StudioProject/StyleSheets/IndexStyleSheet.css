@@ -51,6 +51,7 @@ nav ul li {
 
     nav ul li a {
         padding: .5em 1.2em;
+        margin: 0 .5em;
         display: block;
         text-decoration: none;
         color: rgba(43, 70, 29, 1);
@@ -93,7 +94,7 @@ body {
     display: inline;
 }
 .siteSectionTitle {
-    font-size: 1.4em;
+    font-size: 3em;
     color: rgba(43, 70, 29, 1);
 }
 .siteArticleTitle {
@@ -110,6 +111,7 @@ body {
 }
 
 /*#endregion*/
+
 /*#region finePrint*/
 .finePrint {
     font-size: .5em;
@@ -119,6 +121,48 @@ body {
     font-size: 1em;
     transition: .5s ease;
     font-style: italic;
+}
+/*#endregion*/
+
+/*#region ContactPage*/
+
+.contactSlot {
+    padding: .5em 1.2em;
+    display: block;
+    text-decoration: none;
+    color: rgba(65, 119, 34, 1);
+    border: solid;
+    border-color: rgba(43, 70, 29, .8);
+    background-image: linear-gradient(50deg, rgba(255, 166, 51, .85), rgba(232, 211, 163, .5), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
+    font-size: 1.8em;
+}
+.address {
+    color: rgba(43, 70, 29, 1);
+}
+
+
+/*#endregion*/
+
+/*#region TeamPage*/
+
+.teamLeadProfile {
+    color: rgba(43, 70, 29, 1);
+    border: solid;
+    border-color: rgba(43, 70, 29, .8);
+    background-image: linear-gradient(50deg, rgba(255, 166, 51, .85), rgba(232, 211, 163, .5), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
+}
+
+.teamProfile {
+    color: rgba(43, 70, 29, 1);
+    border: solid;
+    border-color: rgba(43, 70, 29, .8);
+    background-image: linear-gradient(50deg, rgba(255, 166, 51, .85), rgba(232, 211, 163, .5), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
+}
+
+.teamAside {
+    border: solid;
+    border-color: rgba(43, 70, 29, .8);
+    background-image: linear-gradient(50deg, rgba(255, 166, 51, .85), rgba(232, 211, 163, .5), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
 }
 /*#endregion*/
 
