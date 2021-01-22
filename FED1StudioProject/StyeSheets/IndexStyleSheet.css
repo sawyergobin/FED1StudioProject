@@ -1,80 +1,151 @@
 ﻿/*Primary color use list: 
-    #3B5A9D (blue)
-    #FFA633 (orange)
-    #E8D3A3 (khaki)
-    #4FB2AA (teal)
-    #63812C (green)
-    #2B461D (dark green)
-    #43304C (purple)
-    #E2E6E4 (lightgray)
+    rgba(59, 90, 157, 1) (blue)
+    rgba(255, 166, 51,1) (orange)
+    rgba(232, 211, 163,1) (khaki)
+    rgba(79, 178, 170, 1) (teal)
+    rgba(65, 119, 34, 1) (green)
+    rgba(43, 70, 29, 1) (dark green)
+    rgba(67, 48, 76, 1) (purple)
+    rgba(226, 230, 228, 1) (lightgray)
 */
 /*Font Sizes:
-    20 px (company name), 
-    18px (slogan),
-    24px (img caption)
-    18 px (article titles)
-    13px (article text)
+    1.8em (company name)
+    1em (slogan)
+    1.5em (img caption)
+    1.2em (article titles)
+    20px (article text)
 */
+
+
+/*#region Header*/
 header {
-    background-color: #E2E6E4;
-    color: #2B461D;
+    background-image: linear-gradient(50deg, rgba(255, 166, 51, .85), rgba(232, 211, 163, .5), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
     border: solid;
-    border-color: #2B461D;
+    border-color: rgba(43, 70, 29, 1);
 }
-body {
-    background-color: #E2E6E4;
+#companyName {
+    font-weight: bold;
+    display: inline;
+    font-size: 1.8em;
+    color: rgba(65, 119, 34, 1);
 }
+.slogan {
+    font-style: italic;
+    font-size: 1em;
+    display: inline-flex;
+    color: rgba(65, 119, 34, 1);
+}
+/*#endregion*/
+
+/*#region NavBar*/
 .navBar {
     background-color: #E2E6E4;
     color: #2B461D;
     border: solid;
     border-color: #2B461D;
 }
-#companyName {
-    color: #63812C;
-    font-weight: bold;
-    font-size: 20px;
+
+nav ul li {
+    display: inline-block;
 }
-.slogan {
-    font-style: italic;
-    font-size: 18px;
+
+    nav ul li a {
+        padding: .5em 1.2em;
+        display: block;
+        text-decoration: none;
+        color: rgba(43, 70, 29, 1);
+        border: solid;
+        border-color: rgba(43, 70, 29, .8);
+        background-image: linear-gradient(50deg, rgba(255, 166, 51, .85), rgba(232, 211, 163, .5), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
+    }
+
+        nav ul li a:hover, a:active, a:focus {
+            color: rgba(43, 70, 29, .8);
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: .5s ease;
+            color: rgba(43, 70, 29, 1);
+            background-image: linear-gradient(50deg, rgba(255, 166, 51, .85), rgba(232, 211, 163, .5), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
+            border: none;
+        }
+/*#endregion*/
+
+/*#region Body*/
+body {
+    background-image: url('/Images/Map_Background_Antique.jpg');
 }
 .pageTitle {
     text-decoration: underline;
-    color: #3B5A9D;
+    color: rgba(43, 70, 29, 1);
 }
 .imageCaption {
-    text-decoration: underline;
-    font-size: 24px;
+    font-style: italic;
+    font-size: 1.5em;
     font-weight: bolder;
-    color: #3B5A9D;
+    color: rgba(43, 70, 29, 1);
+    display: inline;
 }
 .imageCaption2 {
-    font-size: 24px;
+    font-size: 1.4em;
     font-weight: bolder;
-    color: #3B5A9D;
+    color: rgba(43, 70, 29, 1);
+    display: inline;
 }
-/*Why aren't these 3 working??*/
 .siteSectionTitle {
-    color: #3B5A9D;
+    font-size: 1.4em;
+    color: rgba(43, 70, 29, 1);
 }
 .siteArticleTitle {
-    color: #63812C;
-    font-size: 18px;
-    background-color: #E8D3A3;
+    color: rgba(43, 70, 29, 1);
+    font-size: 1.2em;
+    background-image: linear-gradient(50deg, rgba(255, 166, 51, .85), rgba(232, 211, 163, .5), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
 }
 .siteArticle {
     color: #2B461D;
-    font-size: 15px;
-    background-color: #E8D3A3;
+    font-size: 20px;
+    background-image: linear-gradient(50deg, rgba(255, 166, 51, .85), rgba(232, 211, 163, .5), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
+    border: solid;
+    border-color: rgba(43, 70, 29, 1);
 }
 
+/*#endregion*/
+/*#region finePrint*/
 .finePrint {
-    font-size: 8px;
+    font-size: .5em;
 }
+
+.finePrint:hover {
+    font-size: 1em;
+    transition: .5s ease;
+    font-style: italic;
+}
+/*#endregion*/
+
+/*#region Footer*/
 footer {
-    background-color: #E2E6E4;
-    color: #2B461D;
+    background-image: linear-gradient(50deg, rgba(255, 166, 51, .85), rgba(232, 211, 163, .5), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
     border: solid;
-    border-color: #2B461D;
+    border-color: rgba(43, 70, 29, 1);
+    color: rgba(43, 70, 29, 1);
 }
+footer section a {
+    padding: .5em 1.2em;
+    display: inline;
+    text-decoration: none;
+    color: rgba(43, 70, 29, 1);
+    border: solid;
+    border-color: rgba(43, 70, 29, .8);
+    background-image: linear-gradient(50deg, rgba(255, 166, 51, .85), rgba(232, 211, 163, .5), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
+    }
+footer section a:hover, a:active, a:focus {
+    color: rgba(43, 70, 29, .8);
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: .5s ease;
+    color: rgba(43, 70, 29, 1);
+    background-image: linear-gradient(50deg, rgba(255, 166, 51, .85), rgba(232, 211, 163, .5), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
+    border: none;
+    }
+/*#endregion*/

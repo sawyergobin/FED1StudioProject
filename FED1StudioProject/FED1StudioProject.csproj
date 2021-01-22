@@ -69,10 +69,11 @@
   <ItemGroup>
     <Content Include="Classes.html" />
     <Content Include="Contact.html" />
-    <Content Include="Images\7e20d845add915e6ec1e953f4cfacc9a.jpg" />
-    <Content Include="Images\935c966f79f7ef240c90290c3f158972.jpg" />
-    <Content Include="Images\image_24523.jpg" />
-    <Content Include="Images\tumblr_oo9lp9gWe11skbqqro1_1280.jpg" />
+    <Content Include="Images\AA_Academy_Logo.jpg" />
+    <Content Include="Images\Map_Background_Antique.jpg" />
+    <Content Include="Images\Globe_Library.jpg" />
+    <Content Include="Images\Tranquil_Cave.jpg" />
+    <Content Include="Images\Alexaria_Silversword.jpg" />
     <Content Include="StyeSheets\IndexStyleSheet.css" />
     <Content Include="Team.html" />
     <Content Include="index.html" />
