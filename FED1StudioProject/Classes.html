@@ -12,6 +12,8 @@
 
     <link href="StyleSheets/IndexStyleSheet.css" rel="stylesheet" />
 
+    <!-- Font Awesome -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -21,6 +23,18 @@
             The longest journeys start with the first step through our doors!
         </section>
         <!-- Contact info: top right of page. Don't know how to do? -->
+
+        <ul class="socialLinks">
+            <li>
+                <a href="https://www.facebook.com/adventuringaceacademy" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com/adventuringaceacademy" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/adventuringaceacademy" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            </li>
+        </ul>
     </header>
 
     <!-- Nav Bar -->
@@ -29,7 +43,7 @@
             <li>
                 <a href="/index.html">Home</a>
             </li>
-            <li>
+            <li class="currentNav">
                 <a href="/Classes.html">Classes</a>
             </li>
             <li>
@@ -42,12 +56,65 @@
     </nav>
 
     <main>
-        <section>
-            <h2 class="pageTitle">
-                Class Subjects
-            </h2>
-            <!-- Indiviual articles for each image gallery? 6 subjects total. Blurb in each about the topics. -->
-            <!-- Clicking each image gallery could navigate down to that course's class list? -->
+
+        <section class="classSubjects">
+            <h2  class="pageTitle"> Class Subjects</h2>
+            <div>
+                <div class="galleryItem">
+                    <!-- Change hrefs to tables further down -->
+                    <a href="/Images/Globe_Library.jpg" target="_blank">
+                        <img src="/Images/Globe_Library.jpg" alt="Class subject image" title="Class Subject" width="600" height="400" />
+                    </a>
+                    <div class="description">
+                        This is a sample description for the image.
+                    </div>
+                </div>
+                <div class="galleryItem">
+                    <!-- Change hrefs to tables further down -->
+                    <a href="/Images/Globe_Library.jpg" target="_blank">
+                        <img src="/Images/Globe_Library.jpg" alt="Class subject image" title="Class Subject" width="600" height="400" />
+                    </a>
+                    <div class="description">
+                        This is a sample description for the image.
+                    </div>
+                </div>
+                <div class="galleryItem">
+                    <!-- Change hrefs to tables further down -->
+                    <a href="/Images/Globe_Library.jpg" target="_blank">
+                        <img src="/Images/Globe_Library.jpg" alt="Class subject image" title="Class Subject" width="600" height="400" />
+                    </a>
+                    <div class="description">
+                        This is a sample description for the image.
+                    </div>
+                </div>
+                <div class="galleryItem">
+                    <!-- Change hrefs to tables further down -->
+                    <a href="/Images/Globe_Library.jpg" target="_blank">
+                        <img src="/Images/Globe_Library.jpg" alt="Class subject image" title="Class Subject" width="600" height="400" />
+                    </a>
+                    <div class="description">
+                        This is a sample description for the image.
+                    </div>
+                </div>
+                <div class="galleryItem">
+                    <!-- Change hrefs to tables further down -->
+                    <a href="/Images/Globe_Library.jpg" target="_blank">
+                        <img src="/Images/Globe_Library.jpg" alt="Class subject image" title="Class Subject" width="600" height="400" />
+                    </a>
+                    <div class="description">
+                        This is a sample description for the image.
+                    </div>
+                </div>
+                <div class="galleryItem">
+                    <!-- Change hrefs to tables further down -->
+                    <a href="/Images/Globe_Library.jpg" target="_blank">
+                        <img src="/Images/Globe_Library.jpg" alt="Class subject image" title="Class Subject" width="600" height="400" />
+                    </a>
+                    <div class="description">
+                        This is a sample description for the image.
+                    </div>
+                </div>
+            </div>
         </section>
         <section>
             <h2 class="pageTitle">
@@ -56,9 +123,10 @@
             <!-- Have a table with class name, instructor, and meeting time for all 3 classes in each subject. 6 total tables, 18 total classes. Refer to wireframe for meeting times -->
         </section>
     </main>
+
     <footer>
         <br />
-        <section>
+        <section class="backToTop">
             <a href="#">Back to Top</a>
         </section>
         <br />
@@ -69,9 +137,19 @@
         <section class="copyright">
             Copyright &copy; 2021 Adventuring Academy. All Rights Reserved.
         </section>
-        <!--
-        Social links here, bottom right
-        -->
+        <section>
+            <ul class="socialLinks">
+                <li>
+                    <a href="https://www.facebook.com/adventuringaceacademy" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/adventuringaceacademy" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/adventuringaceacademy" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </section>
     </footer>
 </body>
 </html>
