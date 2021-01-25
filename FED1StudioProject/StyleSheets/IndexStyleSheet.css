@@ -18,6 +18,8 @@
 
 /*#region Fonts*/
 
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,700;1,400;1,700&family=Tangerine:wght@400;700&display=swap');
+
 /*#endregion*/
 /*#region Header*/
 header {
@@ -28,18 +30,26 @@ header {
 header img {
     border-radius: 50%;
     overflow: hidden;
+    float: left;
+    height: 6em;
+    margin: .2em;
 }
 #companyName {
+    font-family: Tangerine, serif;
     font-weight: bold;
-    display: inline;
-    font-size: 1.8em;
+    display: block;
+    font-size: 3em;
     color: rgba(65, 119, 34, 1);
+    margin: .2em;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, .3);
 }
 .slogan {
-    font-style: italic;
-    font-size: 1em;
-    display: inline-flex;
+    font-family: Tangerine, serif;
+    font-size: 2em;
+    display: inline-block;
     color: rgba(65, 119, 34, 1);
+    margin-bottom: .2em;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, .3);
 }
 
 .socialLinks li {
@@ -55,6 +65,20 @@ header img {
 .socialLinks li a:hover, .socialLinks li a:active, .socialLinks li a:focus {
     font-size: 2.5em;
     }
+
+.headerColumnLeft {
+    width: 80%;
+}
+
+.headerColumnRight {
+    float: right;
+    width: 20%;
+    text-align: right;
+}
+
+.headerColumnRight ul li {
+    padding: 1em;
+}
 /*#endregion*/
 
 /*#region NavBar*/
@@ -100,15 +124,20 @@ nav ul li {
             border-color: rgba(43, 70, 29, .8);
         }
 .currentNav {
-    text-decoration: underline;
+    font-weight: bold;
 }
 /*#endregion*/
 
 /*#region Body*/
+
+main {
+    font-family: "Fraunces", serif;
+}
+
 body {
     background-image: url('/Images/Map_Background_Antique.jpg');
     font-size: 18px;
-    margin-top: 0;
+    margin: 1%;
 }
 
 body header img {
@@ -119,33 +148,40 @@ body header img {
 .pageTitle {
     text-decoration: underline;
     color: rgba(43, 70, 29, 1);
+    text-align: center;
 }
 .imageCaption {
     font-style: italic;
     font-size: 1.5em;
     font-weight: bolder;
     color: rgba(43, 70, 29, 1);
-    display: inline;
+    text-align: left;
+    padding: 1em;
 }
 .imageCaption2 {
     font-size: 1.4em;
     font-weight: bolder;
     color: rgba(43, 70, 29, 1);
-    display: inline;
+    font-family: Tangerine, serif;
+    text-align: center;
 }
 .siteSectionTitle {
     font-size: 3em;
     color: rgba(43, 70, 29, 1);
+    text-align: center;
 }
 .siteArticleTitle {
     color: rgba(43, 70, 29, 1);
     font-size: 1.2em;
     background-image: linear-gradient(50deg, rgba(255, 166, 51, .85), rgba(232, 211, 163, .5), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
+    padding: 1em;
+
 }
 .siteArticle {
     color: #2B461D;
     font-size: 1em;
     background-image: linear-gradient(50deg, rgba(255, 166, 51, .85), rgba(232, 211, 163, .5), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
+    padding: 2em;
 }
 /*#endregion*/
 
@@ -158,6 +194,38 @@ body header img {
 .finePrint:hover {
     font-size: .8em;
     font-style: italic;
+}
+/*#endregion*/
+
+/*#region Index.html*/
+
+.indexLeftColumn1 {
+    width: 25%;
+    float: left;
+}
+
+.indexLeftColumn1 img {
+    width: 90%;
+}
+
+.indexRightColumn1 {
+    width:73%;
+    float: right;
+}
+
+.indexLeftColumn2 {
+    width: 50%;
+    float: left;
+}
+
+.indexRightColumn2 {
+    width: 50%;
+    float: right;
+}
+
+.clear {
+    clear: both;
+    display: block
 }
 /*#endregion*/
 
@@ -204,6 +272,16 @@ body header img {
     border-color: rgba(43, 70, 29, .8);
     background-image: linear-gradient(50deg, rgba(255, 166, 51, .85), rgba(232, 211, 163, .5), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
 }
+
+#teamsLeftColumn {
+    width: 73%;
+    padding: 1%
+}
+
+#teamsRightColumn {
+    float: right;
+    width: 25%;
+}
 /*#endregion*/
 
 /*#region ClassesPage*/
@@ -248,18 +326,30 @@ footer {
     border-color: rgba(43, 70, 29, 1);
     color: rgba(43, 70, 29, 1);
 }
+
+footer ul {
+    margin: 0;
+    padding: .5em;
+}
+
 .backToTop {
+    display: inline-block;
+} 
+
+.backToTop a {
     padding: .5em 1.2em;
     margin: 0 .5em;
-    display: inline-block;
+    display: block;
     text-decoration: none;
     color: rgba(43, 70, 29, 1);
-    border: solid;
+    border: solid 3px;
     border-color: rgba(43, 70, 29, .8);
-    background-image: linear-gradient(50deg, rgba(255, 166, 51, .85), rgba(232, 211, 163, .5), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
+    background-image: linear-gradient(50deg, rgba(255, 166, 1, .85), rgba(232, 211, 163, .5), rgba(226, 230, 228, .5),rgba(226, 230, 228, .2));
     transition: .5s ease;
     border-radius: .25em;
+
 }
+
     .backToTop a:hover, .backToTop a:active, .backToTop a:focus {
         color: rgba(43, 70, 29, .8);
         text-decoration: none;
@@ -271,7 +361,9 @@ footer {
         border-color: rgba(43, 70, 29, .8);
     }
 
-.backToTop {
-    margin: .5em;
+footer section.copyright {
+    margin: 1em
 }
+
+
 /*#endregion*/
