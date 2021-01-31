@@ -7,13 +7,9 @@
     rgba(43, 70, 29, 1) (dark green)
     rgba(67, 48, 76, 1) (purple)
     rgba(226, 230, 228, 1) (lightgray)
+    rgba(177, 177, 177, 1) (med gray)
 */
 /*Font Sizes:
-    1.8em (company name)
-    1em (slogan)
-    1.5em (img caption)
-    1.2em (article titles)
-    20px (article text)
 */
 
 /*#region Fonts*/
@@ -21,35 +17,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,700;1,400;1,700&family=Tangerine:wght@400;700&display=swap');
 
 /*#endregion*/
+
 /*#region Header*/
 header {
     border: solid;
     border-color: rgba(43, 70, 29, 1);
-    background-image: linear-gradient(50deg, rgba(255, 166, 51, .85), rgba(232, 211, 163, .5), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
+    background-image: url('../Images/Mountain_Vista.png');
+    background-attachment: scroll;
+    background-position: bottom;
 }
-header img {
-    border-radius: 50%;
-    overflow: hidden;
-    float: left;
-    height: 6em;
+
+header div img {
+    display: inline-block;
+    width: 18%;
     margin: .2em;
+    float: left;
 }
 #companyName {
     font-family: Tangerine, serif;
     font-weight: bold;
     display: block;
-    font-size: 3em;
-    color: rgba(65, 119, 34, 1);
-    margin: .2em;
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, .3);
+    font-size: 3.2em;
+    color: rgba(226, 230, 228, 1);
+    margin: .5em;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
 }
 .slogan {
     font-family: Tangerine, serif;
-    font-size: 2em;
+    font-size: 2.5em;
     display: inline-block;
-    color: rgba(65, 119, 34, 1);
+    color: rgba(226, 230, 228, 1);
     margin-bottom: .2em;
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, .3);
+    margin-left: .5em;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
 }
 
 .socialLinks li {
@@ -58,12 +58,12 @@ header img {
 
     .socialLinks li a {
         font-size: 2em;
-        color: rgba(65, 119, 34, 1);
+        color: rgba(226, 230, 228, 1);
         transition: .5s;
     }
 
 .socialLinks li a:hover, .socialLinks li a:active, .socialLinks li a:focus {
-    font-size: 2.5em;
+    font-size: 1.75em;
     }
 
 .headerColumnLeft {
@@ -83,10 +83,10 @@ header img {
 
 /*#region NavBar*/
 .navBar {
-    color: #2B461D;
+    color: rgba(43, 70, 29, 1);
     border: solid;
     border-color: rgba(43, 70, 29, 1);
-    background-image: linear-gradient(50deg, rgba(255, 166, 51, .85), rgba(232, 211, 163, .5), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
+    background-image: linear-gradient(50deg, rgba(177, 177, 177, .8), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
     border-top: 0;
 }
 
@@ -102,12 +102,10 @@ nav ul li {
 
     nav ul li a {
         padding: .5em 1.2em;
-        margin: 0 .5em;
+        margin: 0 .7em;
         display: block;
         text-decoration: none;
         color: rgba(43, 70, 29, 1);
-        border: solid;
-        border-color: rgba(43, 70, 29, .8);
         background-image: linear-gradient(50deg, rgba(255, 166, 51, .85), rgba(232, 211, 163, .5), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
         transition: .5s ease;
         border-radius: .25em;
@@ -117,7 +115,7 @@ nav ul li {
             color: rgba(43, 70, 29, .8);
             text-decoration: none;
             font-weight: bold;
-            font-size: 1.2em;
+            font-size: 1.3em;
             color: rgba(43, 70, 29, 1);
             background-image: linear-gradient(50deg, rgba(255, 166, 51, .85), rgba(232, 211, 163, .5), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
             border: solid 1px;
@@ -135,20 +133,22 @@ main {
 }
 
 body {
-    background-image: url('/Images/Map_Background_Antique.jpg');
     font-size: 18px;
     margin: 1%;
+    background-image: url('../Images/Forest_Background.png');
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-body header img {
-    display: inline;
+.aboutUsImage {
+    margin-top: 4.3em;
 }
-
 
 .pageTitle {
     text-decoration: underline;
     color: rgba(43, 70, 29, 1);
     text-align: center;
+    background-image: linear-gradient(50deg, rgba(177, 177, 177, .8), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
 }
 .imageCaption {
     font-style: italic;
@@ -157,6 +157,7 @@ body header img {
     color: rgba(43, 70, 29, 1);
     text-align: left;
     padding: 1em;
+    background-image: linear-gradient(50deg, rgba(177, 177, 177, .8), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
 }
 .imageCaption2 {
     font-size: 1.4em;
@@ -164,17 +165,20 @@ body header img {
     color: rgba(43, 70, 29, 1);
     font-family: Tangerine, serif;
     text-align: center;
+    background-image: linear-gradient(50deg, rgba(177, 177, 177, .8), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
 }
 .siteSectionTitle {
     font-size: 3em;
     color: rgba(43, 70, 29, 1);
     text-align: center;
+    background-image: linear-gradient(50deg, rgba(177, 177, 177, .8), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
 }
 .siteArticleTitle {
     color: rgba(43, 70, 29, 1);
     font-size: 1.2em;
     background-image: linear-gradient(50deg, rgba(255, 166, 51, .85), rgba(232, 211, 163, .5), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
     padding: 1em;
+    margin-top: 0;
 
 }
 .siteArticle {
@@ -183,6 +187,7 @@ body header img {
     background-image: linear-gradient(50deg, rgba(255, 166, 51, .85), rgba(232, 211, 163, .5), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
     padding: 2em;
 }
+
 /*#endregion*/
 
 /*#region finePrint*/
@@ -225,11 +230,14 @@ body header img {
 
 .clear {
     clear: both;
-    display: block
 }
 /*#endregion*/
 
 /*#region ContactPage*/
+
+.contacts {
+    position: center;
+}
 
 .contactSlot {
     padding: .5em 1.2em;
@@ -259,19 +267,46 @@ body header img {
     border-color: rgba(43, 70, 29, .8);
     background-image: linear-gradient(50deg, rgba(255, 166, 51, .85), rgba(232, 211, 163, .5), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
     margin: .5em;
+    padding: .5em;
+    border-radius: 1em;
 }
 
 .teamProfile {
     color: rgba(43, 70, 29, 1);
-    background-image: linear-gradient(50deg, rgba(255, 166, 51, .85), rgba(232, 211, 163, .5), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
+    background-image: linear-gradient(50deg, rgba(177, 177, 177, .8), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
     margin: .5em;
+    padding: .5em;
+    border-radius: 1em;
 }
 
 .teamAside {
     border: solid;
     border-color: rgba(43, 70, 29, .8);
-    background-image: linear-gradient(50deg, rgba(255, 166, 51, .85), rgba(232, 211, 163, .5), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
+    background-image: linear-gradient(50deg, rgba(177, 177, 177, .8), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
 }
+
+    .teamAside ul {
+        text-align: left;
+    }
+
+.teamAside ul li {
+    margin: 1em;
+}
+
+.teamAside ul li a {
+    text-decoration: none;
+    color: rgba(43, 70, 29, 1);
+    text-align: center;
+    font-size: 1.5em; 
+    background-image: linear-gradient(50deg, rgba(177, 177, 177, .8), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
+    padding: .2em;
+    border-radius: .2em;
+}
+
+    .teamAside ul li a:hover {
+        font-weight: bold;
+        background-image: linear-gradient(50deg, rgba(255, 166, 51, .85), rgba(232, 211, 163, .5), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
+    }
 
 #teamsLeftColumn {
     width: 73%;
@@ -282,38 +317,51 @@ body header img {
     float: right;
     width: 25%;
 }
+
 /*#endregion*/
 
 /*#region ClassesPage*/
 
-.classSubjecct:{
-    display:
-}
-
 div.galleryItem {
     display: inline-block;
-    width: 350px;
-    border: 1px solid #ccc;
-    margin: 10px;
-    background-color: white;
+    width: 26.66%;
+    box-shadow: rgba(177, 177, 177, .3) .8em .8em ;  
+    margin: 2.5%;
+    background-image: linear-gradient(50deg, rgba(177, 177, 177, .8), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
+    transition: .5s;
+    border-radius: 1em;
 }
 
     div.galleryItem img {
         width: 100%;
         height: auto;
+        transition: .5s;
+        border-radius: 1em;
     }
 
-div.galeryItem:hover {
-    border: 1px solid darkgrey;
-}
+    div.galleryItem img:hover {
+        width: 95%;
+        position: center;
+    }
 
-div.galleryItem a:hover {
-    background-color: darkgrey;
-}
+    div.galleryItem:hover {
+        background-image: linear-gradient(50deg, rgba(255, 166, 51, .85), rgba(232, 211, 163, .5), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
+        
+    }
 
 #imageGallery {
     margin: 0 auto;
-    width: 85%;
+    width: 90%;
+    text-align: center;
+}
+
+.galleryItem div h3 {
+    color: rgba(43, 70, 29, 1);
+    margin: 0;
+    text-align: center;
+}
+
+.galleryItem div p {
     text-align: center;
 }
 
@@ -321,7 +369,7 @@ div.galleryItem a:hover {
 
 /*#region Footer*/
 footer {
-    background-image: linear-gradient(50deg, rgba(255, 166, 51, .85), rgba(232, 211, 163, .5), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
+    background-image: linear-gradient(50deg, rgba(177, 177, 177, .8), rgba(226, 230, 228, .5), rgba(226, 230, 228, .2));
     border: solid;
     border-color: rgba(43, 70, 29, 1);
     color: rgba(43, 70, 29, 1);

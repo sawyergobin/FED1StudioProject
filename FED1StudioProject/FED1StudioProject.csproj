@@ -69,12 +69,24 @@
   <ItemGroup>
     <Content Include="Classes.html" />
     <Content Include="Contact.html" />
-    <Content Include="Images\AA_Academy_Castle.jpg" />
-    <Content Include="Images\AA_Academy_Logo.jpg" />
-    <Content Include="Images\Map_Background_Antique.jpg" />
-    <Content Include="Images\Globe_Library.jpg" />
-    <Content Include="Images\Tranquil_Cave.jpg" />
-    <Content Include="Images\Alexaria_Silversword.jpg" />
+    <Content Include="Images\AA_Academy_Castle.png" />
+    <Content Include="Images\AA_Academy_Favicon.png" />
+    <Content Include="Images\AA_Academy_Logo.png" />
+    <Content Include="Images\AA_Academy_Words.png" />
+    <Content Include="Images\Class Subjects\Armor_Pauldron.png" />
+    <Content Include="Images\Class Subjects\Compass_In_Grass.png" />
+    <Content Include="Images\Class Subjects\Dessicated_Skeleton.png" />
+    <Content Include="Images\Class Subjects\Dragon_Statue.png" />
+    <Content Include="Images\Class Subjects\Dungeon_Skull_Wall.png" />
+    <Content Include="Images\Class Subjects\Magical_Ingredients.png" />
+    <Content Include="Images\Class Subjects\Potion_Cabinet.png" />
+    <Content Include="Images\Forest_Background.png" />
+    <Content Include="Images\Instructor_Logo.png" />
+    <Content Include="Images\Library_Shelves.png" />
+    <Content Include="Images\Mountain_Vista.png" />
+    <Content Include="Images\Quill_On_Desk.png" />
+    <Content Include="Images\Ruins_Entrance.png" />
+    <Content Include="Images\Sword_In_Grass.png" />
     <Content Include="StyleSheets\IndexStyleSheet.css" />
     <Content Include="Team.html" />
     <Content Include="index.html" />
@@ -84,7 +96,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Images\ui-image-placeholder-wireframes-apps-260nw-1037719204 %281%29.webp" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
